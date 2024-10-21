@@ -1,6 +1,3 @@
 require("config.options")
 require("config.remap")
 require("config.lazy")
-require("config.colors")
-vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
