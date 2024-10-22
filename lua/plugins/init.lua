@@ -18,6 +18,9 @@ return {
         opts = {}, 
     },
     {
+        "catppuccin/nvim", name = "catppuccin", priority = 1000 
+    },
+    {
         "christoomey/vim-tmux-navigator"
     },
     {
