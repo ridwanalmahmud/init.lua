@@ -22,9 +22,7 @@ return {
       invert_intend_guides = false,
       inverse = true, -- invert background for search, diffs, statuslines and errors
       contrast = "hard", -- can be "hard", "soft" or empty string
-      palette_overrides = {
-          light1 = "#000000",
-      },
+      palette_overrides = {},
       overrides = {
         Comment = { fg = "#2ea542" },
         ["@function"] = { fg = gruvbox.palette.bright_purple },

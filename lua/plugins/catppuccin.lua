@@ -19,8 +19,8 @@ return {
             no_bold = false, -- Force no bold
             no_underline = false, -- Force no underline
             styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
-                comments = { "italic" }, -- Change the style of comments
-                conditionals = { "italic" },
+                comments = {}, -- Change the style of comments
+                conditionals = {},
                 loops = {},
                 functions = {},
                 keywords = {},
@@ -34,7 +34,9 @@ return {
                 -- miscs = {}, -- Uncomment to turn off hard-coded styles
             },
             color_overrides = {},
-            custom_highlights = {},
+            custom_highlights = {
+                Comment = { fg = "#2ea542" },
+            },
             default_integrations = true,
             integrations = {
                 cmp = true,
