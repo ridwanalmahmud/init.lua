@@ -103,4 +103,30 @@ set -gF status-style "bg=#{@ctp_bg},fg=#{@ctp_fg}"
 set -gF window-status-format "#[bg=#{@ctp_surface_1},fg=#{@ctp_fg}] ##I ##T "
 set -gF window-status-current-format "#[bg=#{@ctp_mauve},fg=#{@ctp_crust}] ##I ##T "
 
-run ~/.config/tmux/plugins/tmux-cpu/cpu.tmux```
+run ~/.config/tmux/plugins/tmux-cpu/cpu.tmux
+
+## or this
+# set -ga terminal-overrides ",screen-256color*:Tc"   # set-option -g default-terminal "screen-256color"
+# set -s escape-time 0
+# unbind C-b
+# set-option -g prefix C-a
+# bind-key C-a send-prefix                            # set -g status-style 'bg=#000000 fg=#5eacd3'
+#
+# bind r source-file ~/.tmux.conf
+# set -g base-index 1
+#
+# unbind r
+# bind r source-file ~/.tmux.conf
+# bind -r m resize-pane -Z
+#
+# set-window-option -g mode-keys vi
+# bind -T copy-mode-vi v send-keys -X begin-selection
+# bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel 'xclip -in -selection clipboard'
+#
+# # vim-like pane switching
+# bind -r ^ last-window
+# bind -r k select-pane -U
+# bind -r j select-pane -D
+# bind -r h select-pane -L
+# bind -r l select-pane -R
+```
